@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HgViewController : UIViewController
+@interface HgViewController : UITableViewController
 
 @end

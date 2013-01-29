@@ -12,25 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Check Info Plist here
-    NSDictionary *info_section = [[NSBundle mainBundle] infoDictionary];
-    NSString *s = [NSString stringWithFormat:@"BundleID: %@\nStaging: %@", [[NSBundle mainBundle] bundleIdentifier], [info_section valueForKey:@"STAGING"]];
-//    NSString *s = [[NSString alloc] initWithData:JSON encoding:NSUTF8StringEncoding];
-    UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"info" message:s delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-    [a show];
-    
-    
-    if([info_section valueForKey:@"STAGING"])
-    {
-        NSLog(@"DEFINING STATING HERE");
-#define STAGING 1
-    } else {
-#ifdef STAGING
-#undef STAGING
-#endif
-    }
-    
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
@@ -53,9 +37,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    if(![[[NSBundle mainBundle] infoDictionary] valueForKey:@"STAGING"]) return;
-    NSLog(@"defined");
-    [[[UIAlertView alloc] initWithTitle:@"Debug" message:@"Staging is enabled" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
 
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
