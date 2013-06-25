@@ -245,10 +245,13 @@
 		D85F90A81641B86400E0FD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81EC3576-E806-418C-9B83-0D9B095FA5C2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -256,10 +259,12 @@
 		D85F90A91641B86400E0FD36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81EC3576-E806-418C-9B83-0D9B095FA5C2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
