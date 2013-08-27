@@ -8,6 +8,7 @@
 
 #import "HgViewController.h"
 
+
 @interface HgViewController ()
 
 @property (nonatomic, strong) NSDictionary *dataMap;
@@ -102,6 +103,15 @@
     id value = [self kvAtIndexPath:indexPath];
 cell.detailTextLabel.text = value;
 return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSArray *a = @[];
+    // Make crash
+    id v = a[0];
 }
 
 @end

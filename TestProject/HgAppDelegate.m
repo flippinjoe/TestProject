@@ -7,11 +7,21 @@
 //
 
 #import "HgAppDelegate.h"
+#import <KSCrash/KSCrash.h>
+#import <KSCrash/KSCrashInstallationVictory.h>
+
 
 @implementation HgAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    KSCrashInstallationVictory *installation = [KSCrashInstallationVictory sharedInstance];
+    installation.url = [NSURL URLWithString:@"http://crashes.mercury.io/TestProject/new"];
+    
+    [installation install];
+    [installation sendAllReportsWithCompletion:^(NSArray *filteredReports, BOOL completed, NSError *error) {
+        NSLog(@"SENDING REPORTS %@, %i, %@", filteredReports, completed, error);
+    }];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
     self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
     [self.window makeKeyAndVisible];

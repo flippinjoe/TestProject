@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82E0B9F17CC45C600945E95 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E0B9E17CC45C600945E95 /* libz.dylib */; };
+		D82E0BA117CC45FD00945E95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E0BA017CC45FD00945E95 /* SystemConfiguration.framework */; };
+		D82E0BAA17CC484B00945E95 /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E0BA917CC484B00945E95 /* KSCrash.framework */; };
+		D82E0BAB17CC48C000945E95 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E0BA317CC473D00945E95 /* MessageUI.framework */; };
 		D85F90851641B86400E0FD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90841641B86400E0FD36 /* UIKit.framework */; };
 		D85F90871641B86400E0FD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90861641B86400E0FD36 /* Foundation.framework */; };
 		D85F90891641B86400E0FD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90881641B86400E0FD36 /* CoreGraphics.framework */; };
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D82E0B9C17CC45C000945E95 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D82E0B9E17CC45C600945E95 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D82E0BA017CC45FD00945E95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D82E0BA317CC473D00945E95 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D82E0BA517CC479700945E95 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		D82E0BA917CC484B00945E95 /* KSCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSCrash.framework; path = Libraries/KSCrash.framework; sourceTree = SOURCE_ROOT; };
 		D85F90801641B86400E0FD36 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85F90841641B86400E0FD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D85F90861641B86400E0FD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82E0BAB17CC48C000945E95 /* MessageUI.framework in Frameworks */,
+				D82E0BA117CC45FD00945E95 /* SystemConfiguration.framework in Frameworks */,
+				D82E0B9F17CC45C600945E95 /* libz.dylib in Frameworks */,
+				D82E0BAA17CC484B00945E95 /* KSCrash.framework in Frameworks */,
 				D85F90851641B86400E0FD36 /* UIKit.framework in Frameworks */,
 				D85F90871641B86400E0FD36 /* Foundation.framework in Frameworks */,
 				D85F90891641B86400E0FD36 /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D82E0B8B17CC44A700945E95 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D82E0BA917CC484B00945E95 /* KSCrash.framework */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		D85F90751641B86400E0FD36 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +126,11 @@
 		D85F90831641B86400E0FD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D82E0BA517CC479700945E95 /* libiconv.dylib */,
+				D82E0BA317CC473D00945E95 /* MessageUI.framework */,
+				D82E0BA017CC45FD00945E95 /* SystemConfiguration.framework */,
+				D82E0B9E17CC45C600945E95 /* libz.dylib */,
+				D82E0B9C17CC45C000945E95 /* Security.framework */,
 				D85F90841641B86400E0FD36 /* UIKit.framework */,
 				D85F90861641B86400E0FD36 /* Foundation.framework */,
 				D85F90881641B86400E0FD36 /* CoreGraphics.framework */,
@@ -115,6 +142,7 @@
 		D85F908A1641B86400E0FD36 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				D82E0B8B17CC44A700945E95 /* Libraries */,
 				D85F90931641B86400E0FD36 /* HgAppDelegate.h */,
 				D85F90941641B86400E0FD36 /* HgAppDelegate.m */,
 				D85F90A21641B86400E0FD36 /* HgViewController.h */,
@@ -357,12 +385,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = ./Libraries;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/include/**";
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "47E4E53A-C5AC-4793-B78F-EAACF10512E6";
+				PROVISIONING_PROFILE = "16E3F935-A01C-45F1-BC39-19367A40132B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,12 +404,15 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = ./Libraries;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/include/**";
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "47E4E53A-C5AC-4793-B78F-EAACF10512E6";
+				PROVISIONING_PROFILE = "16E3F935-A01C-45F1-BC39-19367A40132B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BF940451-221A-475C-87A1-FB14ECDD6373</string>
 	<key>IDESourceControlProjectName</key>
@@ -10,6 +12,10 @@
 	<dict>
 		<key>2A30A180-261D-48F6-BF1B-C55426F31242</key>
 		<string>ssh://github.com/flippinjoe21/TestProject.git</string>
+		<key>6154AA7D-6D97-4AE6-BCC6-615664E47E9B</key>
+		<string>https://github.com/MercuryIntermedia/FoxNews_iPhone.git</string>
+		<key>E13DEB53-3AFC-4F24-A99F-BFEB456D370A</key>
+		<string>ssh://github.com/kstenerud/KSCrash.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TestProject/TestProject.xcodeproj/project.xcworkspace</string>
@@ -17,6 +23,10 @@
 	<dict>
 		<key>2A30A180-261D-48F6-BF1B-C55426F31242</key>
 		<string>../../..</string>
+		<key>6154AA7D-6D97-4AE6-BCC6-615664E47E9B</key>
+		<string>../../../foxnews/iphone</string>
+		<key>E13DEB53-3AFC-4F24-A99F-BFEB456D370A</key>
+		<string>../../submodules/KSCrash</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/flippinjoe21/TestProject.git</string>
@@ -26,6 +36,22 @@
 	<string>2A30A180-261D-48F6-BF1B-C55426F31242</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6154AA7D-6D97-4AE6-BCC6-615664E47E9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iphone</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E13DEB53-3AFC-4F24-A99F-BFEB456D370A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KSCrash</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
