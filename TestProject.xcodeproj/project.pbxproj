@@ -22,6 +22,7 @@
 		D88935BA177A2AFE00CCCC3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90841641B86400E0FD36 /* UIKit.framework */; };
 		D88935C0177A2AFE00CCCC3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D88935BE177A2AFE00CCCC3D /* InfoPlist.strings */; };
 		D88935C2177A2AFE00CCCC3D /* TestProject_Testies.m in Sources */ = {isa = PBXBuildFile; fileRef = D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */; };
+		D8DB726D17D66929007FDEAC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB726C17D66929007FDEAC /* Security.framework */; };
 		D8EC13B317D6533500CAE4E1 /* MercuryCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8EC13B117D6533500CAE4E1 /* MercuryCore.bundle */; };
 		D8EC13B417D6533500CAE4E1 /* MercuryCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EC13B217D6533500CAE4E1 /* MercuryCore.framework */; };
 		D8EC13B717D6545E00CAE4E1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EC13B617D6545E00CAE4E1 /* CoreData.framework */; };
@@ -62,6 +63,7 @@
 		D88935BF177A2AFE00CCCC3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProject_Testies.m; sourceTree = "<group>"; };
 		D88935C3177A2AFE00CCCC3D /* TestProject Testies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject Testies-Prefix.pch"; sourceTree = "<group>"; };
+		D8DB726C17D66929007FDEAC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D8EC13B117D6533500CAE4E1 /* MercuryCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MercuryCore.bundle; sourceTree = "<group>"; };
 		D8EC13B217D6533500CAE4E1 /* MercuryCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MercuryCore.framework; sourceTree = "<group>"; };
 		D8EC13B617D6545E00CAE4E1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DB726D17D66929007FDEAC /* Security.framework in Frameworks */,
 				D8EC13BD17D6547400CAE4E1 /* libxml2.dylib in Frameworks */,
 				D8EC13BB17D6546E00CAE4E1 /* libz.dylib in Frameworks */,
 				D8EC13B917D6546800CAE4E1 /* CoreLocation.framework in Frameworks */,
@@ -121,6 +124,7 @@
 		D85F90831641B86400E0FD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8DB726C17D66929007FDEAC /* Security.framework */,
 				D8EC13BC17D6547400CAE4E1 /* libxml2.dylib */,
 				D8EC13BA17D6546E00CAE4E1 /* libz.dylib */,
 				D8EC13B817D6546800CAE4E1 /* CoreLocation.framework */,
@@ -395,7 +399,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "47E4E53A-C5AC-4793-B78F-EAACF10512E6";
+				PROVISIONING_PROFILE = "E54B257D-D853-4C2A-9A35-9756242DFBE5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,7 +423,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "47E4E53A-C5AC-4793-B78F-EAACF10512E6";
+				PROVISIONING_PROFILE = "E54B257D-D853-4C2A-9A35-9756242DFBE5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
