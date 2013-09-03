@@ -35,15 +35,15 @@
     
     [MFlowConfig dump];
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
+    [self.window makeKeyAndVisible];
     
     if([MFlowConfig sharedInstance].usingStaging)
     {
         [[[UIAlertView alloc] initWithTitle:@"Staging Enabled" message:@"You have enabled staging" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
     }
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-    self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 							
@@ -66,7 +66,11 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-
+    [MFlowConfig dump];
+    if([MFlowConfig sharedInstance].usingStaging)
+    {
+        [[[UIAlertView alloc] initWithTitle:@"Staging Enabled" message:@"You have enabled staging" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
+    }
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
