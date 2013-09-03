@@ -7,11 +7,40 @@
 //
 
 #import "HgAppDelegate.h"
+#import <MercuryCore/MFlowConfig.h>
 
 @implementation HgAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *implementation;
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        implementation = @"iPad";
+    else
+        implementation = @"HVGA";
+    
+    if([[UIScreen mainScreen] scale] > 1)
+    {
+        implementation = [implementation stringByAppendingString:@"2x"];
+        if([UIScreen mainScreen].scale == 2.f && [[UIScreen mainScreen] bounds].size.height == 568.0f)
+        { implementation = [implementation stringByAppendingString:@"h"]; }
+    }
+    
+    [MFlowConfig initMFlowWithConfig:@{
+                                       MFlowConfigKeys.stagingAppURLKey:@"http://showtime.staging.mercury.io",
+                                       MFlowConfigKeys.liveAppURLKey:@"http://showtime.mercuryintermedia.net",
+                                       MFlowConfigKeys.productKey:@"Showtime",
+                                       MFlowConfigKeys.distributionIDKey:@9
+                                       }];
+    
+    [MFlowConfig dump];
+    
+    
+    if([MFlowConfig sharedInstance].usingStaging)
+    {
+        [[[UIAlertView alloc] initWithTitle:@"Staging Enabled" message:@"You have enabled staging" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
     self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
     [self.window makeKeyAndVisible];
