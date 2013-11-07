@@ -5,58 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BF940451-221A-475C-87A1-FB14ECDD6373</string>
+	<string>90AC62AB-0B92-4E53-AECD-35A71EEAF3C8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TestProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2A30A180-261D-48F6-BF1B-C55426F31242</key>
-		<string>ssh://github.com/flippinjoe21/TestProject.git</string>
-		<key>6154AA7D-6D97-4AE6-BCC6-615664E47E9B</key>
-		<string>https://github.com/MercuryIntermedia/FoxNews_iPhone.git</string>
-		<key>E13DEB53-3AFC-4F24-A99F-BFEB456D370A</key>
-		<string>ssh://github.com/kstenerud/KSCrash.git</string>
+		<key>001E5957-3FB9-45E4-A8F8-7B2FB5C5EB50</key>
+		<string>https://github.com/flippinjoe21/TestProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TestProject/TestProject.xcodeproj/project.xcworkspace</string>
+	<string>TestProject.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2A30A180-261D-48F6-BF1B-C55426F31242</key>
-		<string>../../..</string>
-		<key>6154AA7D-6D97-4AE6-BCC6-615664E47E9B</key>
-		<string>../../../foxnews/iphone</string>
-		<key>E13DEB53-3AFC-4F24-A99F-BFEB456D370A</key>
-		<string>../../submodules/KSCrash</string>
+		<key>001E5957-3FB9-45E4-A8F8-7B2FB5C5EB50</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/flippinjoe21/TestProject.git</string>
+	<string>https://github.com/flippinjoe21/TestProject.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2A30A180-261D-48F6-BF1B-C55426F31242</string>
+	<string>001E5957-3FB9-45E4-A8F8-7B2FB5C5EB50</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6154AA7D-6D97-4AE6-BCC6-615664E47E9B</string>
-			<key>IDESourceControlWCCName</key>
-			<string>iphone</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E13DEB53-3AFC-4F24-A99F-BFEB456D370A</string>
-			<key>IDESourceControlWCCName</key>
-			<string>KSCrash</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2A30A180-261D-48F6-BF1B-C55426F31242</string>
+			<string>001E5957-3FB9-45E4-A8F8-7B2FB5C5EB50</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TestProject</string>
 		</dict>
