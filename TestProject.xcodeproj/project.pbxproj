@@ -387,8 +387,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Ridenour  (QFB8D3T8PR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Ridenour  (QFB8D3T8PR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					./TestProject,
@@ -412,8 +412,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Ridenour  (QFB8D3T8PR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Ridenour  (QFB8D3T8PR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					./TestProject,
