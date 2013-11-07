@@ -33,9 +33,9 @@
     STAssertTrue(1!=2, @"COMPILER IS HAPPY");
 }
 
-- (void)testFail
+- (void)testPassed
 {
-    STFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+//    STFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
