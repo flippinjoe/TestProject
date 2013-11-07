@@ -5,6 +5,53 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.SendEmailAction">
+            <ActionContent
+               title = "Send Email"
+               emailRecipient = "joerdnr19@gmail.com"
+               emailSubject = "test prebuild action"
+               emailBody = "message&#10;"
+               attachLogToEmail = "NO">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "echo &quot;WTF IS YOUR MOTHER FUCKING PROBLEM&quot;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "D85F907F1641B86400E0FD36"
+                     BuildableName = "TestProject.app"
+                     BlueprintName = "TestProject"
+                     ReferencedContainer = "container:TestProject.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "puts &quot;WTF&quot;"
+               shellToInvoke = "/usr/bin/env ruby -rubygems">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "D85F907F1641B86400E0FD36"
+                     BuildableName = "TestProject.app"
+                     BlueprintName = "TestProject"
+                     ReferencedContainer = "container:TestProject.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
