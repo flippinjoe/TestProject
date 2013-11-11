@@ -1,0 +1,5 @@
+#include "Pods-MercuryCore.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/MercuryCore" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MercuryCore" "${PODS_ROOT}/Headers/SFHFKeychainUtils" "${PODS_ROOT}/Headers/TouchJSON" "${PODS_ROOT}/Headers/TouchXML" ${PODS_MERCURYCORE_HEADER_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC ${PODS_MERCURYCORE_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
