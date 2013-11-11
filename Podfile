@@ -1,4 +1,4 @@
-platform :ios, '6.1'
+platform :ios, '7.0'
 
 pod 'MercuryCore', :git=>'git@github.com:MercuryIntermedia/MercuryCoreLib-iOS.git'
 
