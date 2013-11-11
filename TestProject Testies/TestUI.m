@@ -29,6 +29,11 @@
     [tester scrollViewWithAccessibilityLabel:@"Info Scroll View" byFractionOfSizeHorizontal:0 vertical:-.9f];
 }
 
+- (void)testFail
+{
+    [tester tapViewWithAccessibilityLabel:@"no fucking view"];
+}
+
 - (void)testScrollingRotation
 {
 //    [system simulateDeviceRotationToOrientation:UIDeviceOrientationLandscapeLeft];
