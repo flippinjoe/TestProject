@@ -22,6 +22,7 @@
 		D88935BA177A2AFE00CCCC3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90841641B86400E0FD36 /* UIKit.framework */; };
 		D88935C0177A2AFE00CCCC3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D88935BE177A2AFE00CCCC3D /* InfoPlist.strings */; };
 		D88935C2177A2AFE00CCCC3D /* TestProject_Testies.m in Sources */ = {isa = PBXBuildFile; fileRef = D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */; };
+		D88F069018312D4200B32A5E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D88F068F18312D4200B32A5E /* Podfile */; };
 		D8DB726D17D66929007FDEAC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB726C17D66929007FDEAC /* Security.framework */; };
 		D8EC13B317D6533500CAE4E1 /* MercuryCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8EC13B117D6533500CAE4E1 /* MercuryCore.bundle */; };
 		D8EC13B417D6533500CAE4E1 /* MercuryCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EC13B217D6533500CAE4E1 /* MercuryCore.framework */; };
@@ -63,6 +64,7 @@
 		D88935BF177A2AFE00CCCC3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProject_Testies.m; sourceTree = "<group>"; };
 		D88935C3177A2AFE00CCCC3D /* TestProject Testies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject Testies-Prefix.pch"; sourceTree = "<group>"; };
+		D88F068F18312D4200B32A5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D8DB726C17D66929007FDEAC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D8EC13B117D6533500CAE4E1 /* MercuryCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MercuryCore.bundle; sourceTree = "<group>"; };
 		D8EC13B217D6533500CAE4E1 /* MercuryCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MercuryCore.framework; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		D85F90751641B86400E0FD36 = {
 			isa = PBXGroup;
 			children = (
+				D88F068F18312D4200B32A5E /* Podfile */,
 				D85F908A1641B86400E0FD36 /* TestProject */,
 				D88935BB177A2AFE00CCCC3D /* TestProject Testies */,
 				D85F90831641B86400E0FD36 /* Frameworks */,
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88F069018312D4200B32A5E /* Podfile in Resources */,
 				D85F908F1641B86400E0FD36 /* InfoPlist.strings in Resources */,
 				D85F90971641B86400E0FD36 /* Default.png in Resources */,
 				D85F90991641B86400E0FD36 /* Default@2x.png in Resources */,
@@ -450,7 +454,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject Testies/TestProject Testies-Prefix.pch";
@@ -484,7 +487,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject Testies/TestProject Testies-Prefix.pch";
