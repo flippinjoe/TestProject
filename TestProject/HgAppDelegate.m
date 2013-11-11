@@ -35,9 +35,9 @@
     
     [MFlowConfig dump];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-    self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+//    self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
+//    [self.window makeKeyAndVisible];
     
     if([MFlowConfig sharedInstance].usingStaging)
     {

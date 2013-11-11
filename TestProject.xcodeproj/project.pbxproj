@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5670D4E53844450EA10EF87A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C8B63D7F8F4816B3CD389C /* libPods.a */; };
+		5A7F770EAE954F728C199277 /* libPods-TestProject Testies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2D85BE1FC0433393604033 /* libPods-TestProject Testies.a */; };
 		D85F90851641B86400E0FD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90841641B86400E0FD36 /* UIKit.framework */; };
 		D85F90871641B86400E0FD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90861641B86400E0FD36 /* Foundation.framework */; };
 		D85F90891641B86400E0FD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90881641B86400E0FD36 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		D88935C0177A2AFE00CCCC3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D88935BE177A2AFE00CCCC3D /* InfoPlist.strings */; };
 		D88935C2177A2AFE00CCCC3D /* TestProject_Testies.m in Sources */ = {isa = PBXBuildFile; fileRef = D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */; };
 		D88F069018312D4200B32A5E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D88F068F18312D4200B32A5E /* Podfile */; };
+		D8B155561831816100DD768C /* TestUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B155551831816100DD768C /* TestUI.m */; };
+		D8FE8AAB1831867900CD15AA /* MainStoryboard~iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FE8AAA1831867900CD15AA /* MainStoryboard~iphone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		10C8B63D7F8F4816B3CD389C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E2D85BE1FC0433393604033 /* libPods-TestProject Testies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestProject Testies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D85F90801641B86400E0FD36 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85F90841641B86400E0FD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,12 +57,15 @@
 		D85F909A1641B86400E0FD36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D85F90A21641B86400E0FD36 /* HgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgViewController.h; sourceTree = "<group>"; };
 		D85F90A31641B86400E0FD36 /* HgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgViewController.m; sourceTree = "<group>"; };
-		D88935B6177A2AFE00CCCC3D /* TestProject Testies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestProject Testies.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88935B6177A2AFE00CCCC3D /* TestProject Testies.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestProject Testies.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88935BD177A2AFE00CCCC3D /* TestProject Testies-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestProject Testies-Info.plist"; sourceTree = "<group>"; };
 		D88935BF177A2AFE00CCCC3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProject_Testies.m; sourceTree = "<group>"; };
 		D88935C3177A2AFE00CCCC3D /* TestProject Testies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject Testies-Prefix.pch"; sourceTree = "<group>"; };
 		D88F068F18312D4200B32A5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8B155551831816100DD768C /* TestUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUI.m; sourceTree = "<group>"; };
+		D8FE8AAA1831867900CD15AA /* MainStoryboard~iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard~iphone.storyboard"; sourceTree = "<group>"; };
+		E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject Testies.xcconfig"; path = "Pods/Pods-TestProject Testies.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 			files = (
 				D88935BA177A2AFE00CCCC3D /* UIKit.framework in Frameworks */,
 				D88935B9177A2AFE00CCCC3D /* Foundation.framework in Frameworks */,
+				5A7F770EAE954F728C199277 /* libPods-TestProject Testies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 				D85F90831641B86400E0FD36 /* Frameworks */,
 				D85F90811641B86400E0FD36 /* Products */,
 				BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */,
+				E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D85F90801641B86400E0FD36 /* TestProject.app */,
-				D88935B6177A2AFE00CCCC3D /* TestProject Testies.xctest */,
+				D88935B6177A2AFE00CCCC3D /* TestProject Testies.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +122,7 @@
 				D85F90861641B86400E0FD36 /* Foundation.framework */,
 				D85F90881641B86400E0FD36 /* CoreGraphics.framework */,
 				10C8B63D7F8F4816B3CD389C /* libPods.a */,
+				3E2D85BE1FC0433393604033 /* libPods-TestProject Testies.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +135,7 @@
 				D85F90A21641B86400E0FD36 /* HgViewController.h */,
 				D85F90A31641B86400E0FD36 /* HgViewController.m */,
 				D85F908B1641B86400E0FD36 /* Supporting Files */,
+				D8FE8AAA1831867900CD15AA /* MainStoryboard~iphone.storyboard */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -148,6 +159,7 @@
 			children = (
 				D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */,
 				D88935BC177A2AFE00CCCC3D /* Supporting Files */,
+				D8B155551831816100DD768C /* TestUI.m */,
 			);
 			path = "TestProject Testies";
 			sourceTree = "<group>";
@@ -188,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D88935C6177A2AFE00CCCC3D /* Build configuration list for PBXNativeTarget "TestProject Testies" */;
 			buildPhases = (
+				C06D56AF0AAE436C8F4AB38F /* Check Pods Manifest.lock */,
 				D88935B2177A2AFE00CCCC3D /* Sources */,
 				D88935B3177A2AFE00CCCC3D /* Frameworks */,
 				D88935B4177A2AFE00CCCC3D /* Resources */,
+				82567CC2A1A7455098E8655C /* Copy Pods Resources */,
+				D8FE8AAF1831959B00CD15AA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,7 +214,7 @@
 			);
 			name = "TestProject Testies";
 			productName = "TestProject Testies";
-			productReference = D88935B6177A2AFE00CCCC3D /* TestProject Testies.xctest */;
+			productReference = D88935B6177A2AFE00CCCC3D /* TestProject Testies.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -247,6 +262,7 @@
 				D85F908F1641B86400E0FD36 /* InfoPlist.strings in Resources */,
 				D85F90971641B86400E0FD36 /* Default.png in Resources */,
 				D85F90991641B86400E0FD36 /* Default@2x.png in Resources */,
+				D8FE8AAB1831867900CD15AA /* MainStoryboard~iphone.storyboard in Resources */,
 				D85F909B1641B86400E0FD36 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +308,49 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		82567CC2A1A7455098E8655C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TestProject Testies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06D56AF0AAE436C8F4AB38F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8FE8AAF1831959B00CD15AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -310,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D88935C2177A2AFE00CCCC3D /* TestProject_Testies.m in Sources */,
+				D8B155561831816100DD768C /* TestUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +501,7 @@
 		};
 		D88935C7177A2AFE00CCCC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestProject.app/TestProject";
 				CLANG_ENABLE_MODULES = YES;
@@ -450,28 +511,25 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(SDKROOT)/Developer/Library/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject Testies/TestProject Testies-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "TestProject Testies/TestProject Testies-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		D88935C8177A2AFE00CCCC3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestProject.app/TestProject";
 				CLANG_ENABLE_MODULES = YES;
@@ -482,19 +540,19 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(SDKROOT)/Developer/Library/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject Testies/TestProject Testies-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "TestProject Testies/TestProject Testies-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
