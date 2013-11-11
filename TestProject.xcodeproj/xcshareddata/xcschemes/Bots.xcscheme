@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "timestamp=$(date -j -f &quot;%a %b %d %T %Z %Y&quot; &quot;`date`&quot; &quot;+%s&quot;)&#10;log=/var/log/joejenkins/${PRODUCT_NAME}-$timestamp.log&#10;exec &gt; $log 2&gt;&amp;1&#10;&#10;which pod&#10;&#10;echo ${SRCROOT}&#10;&#10;cd ${SRCROOT}; pod install&#10;&#10;">
+               scriptText = "timestamp=$(date -j -f &quot;%a %b %d %T %Z %Y&quot; &quot;`date`&quot; &quot;+%s&quot;)&#10;log=/var/log/joejenkins/${PRODUCT_NAME}-$timestamp.log&#10;exec &gt; $log 2&gt;&amp;1&#10;gem list&#10;&#10;## Checking for Cocoapods&#10;if !(which pod &gt;/dev/null); then&#10;    echo &quot;Cocoapods is not installed here&quot;&#10;    gem install cocoapods&#10;fi&#10;&#10;## Now we should have a valid environment.  Let&apos;s attempt to install&#10;echo &quot;Beginning Pod install&quot;&#10;echo ${SRCROOT}&#10;cd ${SRCROOT}; pod install&#10;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
