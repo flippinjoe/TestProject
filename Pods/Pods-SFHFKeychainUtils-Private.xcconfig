@@ -1,5 +1,0 @@
-#include "Pods-SFHFKeychainUtils.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/SFHFKeychainUtils" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MercuryCore" "${PODS_ROOT}/Headers/SFHFKeychainUtils" "${PODS_ROOT}/Headers/TouchJSON" "${PODS_ROOT}/Headers/TouchXML"
-OTHER_LDFLAGS = -ObjC ${PODS_SFHFKEYCHAINUTILS_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}
