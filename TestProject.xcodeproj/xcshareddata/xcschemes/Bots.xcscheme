@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0450"
+   LastUpgradeVersion = "0500"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "NO">
       <PreActions>
          <ExecutionAction
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "## First we need to make sure joejenkins is installed for our fanciness to occur&#10;&#10;pod install&#10;&#10;&#10;&#10;&#10;&#10;&#10;"
-               shellToInvoke = "/usr/bin/env bash">
+               scriptText = "cd &quot;${SRCROOT}&quot; pod install">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -24,25 +23,6 @@
             </ActionContent>
          </ExecutionAction>
       </PreActions>
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "&#10;puts &quot;wtf&quot;&#10;&#10;File.open(&apos;/Users/joe/Desktop/test.txt&apos;,&apos;wb&apos;) do |f|&#10;f.write(&quot;************ Environment Variables ***********\n&quot;)&#10;    ENV.each do |k,v|&#10;        f.write(&quot;ENV:  #{k} =&gt; #{v}\n&quot;)&#10;    end&#10;&#10;    f.write(&quot;\n\n******** Products **********\n\n&quot;)&#10;    f.write(Dir[File.join(ENV[&apos;BUILD_ROOT&apos;],&apos;**/*&apos;)])&#10;&#10;&#10;end&#10;&#10;&#10;&#10;&#10;"
-               shellToInvoke = "/Applications/Server.app/Contents/ServerRoot/usr/bin/ruby">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "D85F907F1641B86400E0FD36"
-                     BuildableName = "TestProject.app"
-                     BlueprintName = "TestProject"
-                     ReferencedContainer = "container:TestProject.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -66,16 +46,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D88935B5177A2AFE00CCCC3D"
-               BuildableName = "TestProject Testies.octest"
-               BlueprintName = "TestProject Testies"
-               ReferencedContainer = "container:TestProject.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
