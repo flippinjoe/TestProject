@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Mercury. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface TestProject_Testies : SenTestCase
+@interface TestProject_Testies : XCTestCase
 
 @end
 
@@ -30,7 +30,7 @@
 
 - (void)testSucceed
 {
-    STAssertTrue(1!=2, @"COMPILER IS HAPPY");
+    XCTAssertTrue(1!=2, @"COMPILER IS HAPPY");
 }
 
 - (void)testPassed

@@ -18,7 +18,6 @@
 		D85F90991641B86400E0FD36 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D85F90981641B86400E0FD36 /* Default@2x.png */; };
 		D85F909B1641B86400E0FD36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D85F909A1641B86400E0FD36 /* Default-568h@2x.png */; };
 		D85F90A41641B86400E0FD36 /* HgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85F90A31641B86400E0FD36 /* HgViewController.m */; };
-		D88935B8177A2AFE00CCCC3D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88935B7177A2AFE00CCCC3D /* SenTestingKit.framework */; };
 		D88935B9177A2AFE00CCCC3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90861641B86400E0FD36 /* Foundation.framework */; };
 		D88935BA177A2AFE00CCCC3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F90841641B86400E0FD36 /* UIKit.framework */; };
 		D88935C0177A2AFE00CCCC3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D88935BE177A2AFE00CCCC3D /* InfoPlist.strings */; };
@@ -54,8 +53,7 @@
 		D85F909A1641B86400E0FD36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D85F90A21641B86400E0FD36 /* HgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HgViewController.h; sourceTree = "<group>"; };
 		D85F90A31641B86400E0FD36 /* HgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HgViewController.m; sourceTree = "<group>"; };
-		D88935B6177A2AFE00CCCC3D /* TestProject Testies.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestProject Testies.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D88935B7177A2AFE00CCCC3D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D88935B6177A2AFE00CCCC3D /* TestProject Testies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestProject Testies.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88935BD177A2AFE00CCCC3D /* TestProject Testies-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestProject Testies-Info.plist"; sourceTree = "<group>"; };
 		D88935BF177A2AFE00CCCC3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D88935C1177A2AFE00CCCC3D /* TestProject_Testies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProject_Testies.m; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88935B8177A2AFE00CCCC3D /* SenTestingKit.framework in Frameworks */,
 				D88935BA177A2AFE00CCCC3D /* UIKit.framework in Frameworks */,
 				D88935B9177A2AFE00CCCC3D /* Foundation.framework in Frameworks */,
 			);
@@ -104,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D85F90801641B86400E0FD36 /* TestProject.app */,
-				D88935B6177A2AFE00CCCC3D /* TestProject Testies.octest */,
+				D88935B6177A2AFE00CCCC3D /* TestProject Testies.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +112,6 @@
 				D85F90841641B86400E0FD36 /* UIKit.framework */,
 				D85F90861641B86400E0FD36 /* Foundation.framework */,
 				D85F90881641B86400E0FD36 /* CoreGraphics.framework */,
-				D88935B7177A2AFE00CCCC3D /* SenTestingKit.framework */,
 				10C8B63D7F8F4816B3CD389C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -203,8 +199,8 @@
 			);
 			name = "TestProject Testies";
 			productName = "TestProject Testies";
-			productReference = D88935B6177A2AFE00CCCC3D /* TestProject Testies.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = D88935B6177A2AFE00CCCC3D /* TestProject Testies.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -471,7 +467,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -500,7 +495,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
