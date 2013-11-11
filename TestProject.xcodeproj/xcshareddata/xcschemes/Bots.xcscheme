@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cd &quot;${SRCROOT}&quot; pod install">
+               scriptText = "exec &gt; /Users/joe/Desktop/output.txt 2&gt;&amp;1&#10;&#10;which pod&#10;&#10;echo ${SRCROOT}&#10;&#10;cd ${SRCROOT}; pod install&#10;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
