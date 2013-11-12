@@ -8,6 +8,7 @@
 
 #import <KIF/KIF.h>
 
+/*
 @interface UIApplication (Private)
 - (BOOL)rotateIfNeeded:(UIDeviceOrientation)orientation;
 @end
@@ -31,7 +32,7 @@
 
 - (void)testFail
 {
-    [tester tapViewWithAccessibilityLabel:@"no fucking view"];
+//    [tester tapViewWithAccessibilityLabel:@"no fucking view"];
 }
 
 - (void)testScrollingRotation
@@ -41,3 +42,4 @@
 }
 
 @end
+*/
