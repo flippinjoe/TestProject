@@ -464,8 +464,8 @@
 			baseConfigurationReference = BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
@@ -474,7 +474,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "11F04DDA-56C6-4734-A056-CFC4D4FB4A3E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -484,8 +484,8 @@
 			baseConfigurationReference = BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
@@ -494,7 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "11F04DDA-56C6-4734-A056-CFC4D4FB4A3E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
