@@ -478,6 +478,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
@@ -487,7 +488,7 @@
 				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercury.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "88DCD332-A592-4ED6-AA3D-88F408AC6366";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -498,6 +499,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/TestProject-Prefix.pch";
@@ -507,7 +509,7 @@
 				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercury.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "88DCD332-A592-4ED6-AA3D-88F408AC6366";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
