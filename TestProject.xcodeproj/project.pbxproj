@@ -41,7 +41,9 @@
 /* Begin PBXFileReference section */
 		10C8B63D7F8F4816B3CD389C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2D85BE1FC0433393604033 /* libPods-TestProject Testies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestProject Testies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6737EA21A64CE79990491A6E /* Pods-TestProject Testies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject Testies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject Testies/Pods-TestProject Testies.debug.xcconfig"; sourceTree = "<group>"; };
+		8797ADB92F2F8D697EDF683F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CDB8EEC662FBD5A3DEEB9DBF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D85F90801641B86400E0FD36 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85F90841641B86400E0FD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D85F90861641B86400E0FD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,7 +67,7 @@
 		D88F068F18312D4200B32A5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D8B155551831816100DD768C /* TestUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUI.m; sourceTree = "<group>"; };
 		D8FE8AAA1831867900CD15AA /* MainStoryboard~iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard~iphone.storyboard"; sourceTree = "<group>"; };
-		E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject Testies.xcconfig"; path = "Pods/Pods-TestProject Testies.xcconfig"; sourceTree = "<group>"; };
+		E28CA46137CB3B28A5AF4851 /* Pods-TestProject Testies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject Testies.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject Testies/Pods-TestProject Testies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19F5A411705418375A413FA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8797ADB92F2F8D697EDF683F /* Pods.debug.xcconfig */,
+				CDB8EEC662FBD5A3DEEB9DBF /* Pods.release.xcconfig */,
+				6737EA21A64CE79990491A6E /* Pods-TestProject Testies.debug.xcconfig */,
+				E28CA46137CB3B28A5AF4851 /* Pods-TestProject Testies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D85F90751641B86400E0FD36 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +114,7 @@
 				D88935BB177A2AFE00CCCC3D /* TestProject Testies */,
 				D85F90831641B86400E0FD36 /* Frameworks */,
 				D85F90811641B86400E0FD36 /* Products */,
-				BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */,
-				E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */,
+				19F5A411705418375A413FA8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Hg;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Mercury;
 				TargetAttributes = {
 					D85F907F1641B86400E0FD36 = {
@@ -290,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		603D6B231EEE4E51B2C55723 /* Check Pods Manifest.lock */ = {
@@ -320,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-TestProject Testies-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject Testies/Pods-TestProject Testies-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C06D56AF0AAE436C8F4AB38F /* Check Pods Manifest.lock */ = {
@@ -415,6 +427,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -461,7 +474,7 @@
 		};
 		D85F90A81641B86400E0FD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */;
+			baseConfigurationReference = 8797ADB92F2F8D697EDF683F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -472,6 +485,7 @@
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "${inherited}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercury.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "88DCD332-A592-4ED6-AA3D-88F408AC6366";
 				WRAPPER_EXTENSION = app;
@@ -480,7 +494,7 @@
 		};
 		D85F90A91641B86400E0FD36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBAA49778A804ACE9CB68DF5 /* Pods.xcconfig */;
+			baseConfigurationReference = CDB8EEC662FBD5A3DEEB9DBF /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -491,6 +505,7 @@
 				INFOPLIST_FILE = "TestProject/TestProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "${inherited}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercury.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "88DCD332-A592-4ED6-AA3D-88F408AC6366";
 				WRAPPER_EXTENSION = app;
@@ -499,7 +514,7 @@
 		};
 		D88935C7177A2AFE00CCCC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */;
+			baseConfigurationReference = 6737EA21A64CE79990491A6E /* Pods-TestProject Testies.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestProject.app/TestProject";
 				CLANG_ENABLE_MODULES = YES;
@@ -519,6 +534,7 @@
 				INFOPLIST_FILE = "TestProject Testies/TestProject Testies-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "${inherited}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercury.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -527,7 +543,7 @@
 		};
 		D88935C8177A2AFE00CCCC3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0834720AE3F47CEB391A285 /* Pods-TestProject Testies.xcconfig */;
+			baseConfigurationReference = E28CA46137CB3B28A5AF4851 /* Pods-TestProject Testies.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestProject.app/TestProject";
 				CLANG_ENABLE_MODULES = YES;
@@ -548,6 +564,7 @@
 				INFOPLIST_FILE = "TestProject Testies/TestProject Testies-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "${inherited}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercury.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

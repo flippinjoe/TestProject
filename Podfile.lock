@@ -1,0 +1,31 @@
+PODS:
+  - KIF (2.0.0)
+  - MercuryCore (2.2.6):
+    - SFHFKeychainUtils
+    - TouchJSON
+    - TouchXML
+  - SFHFKeychainUtils (0.0.1)
+  - TouchJSON (1.1)
+  - TouchXML (0.1)
+
+DEPENDENCIES:
+  - KIF (~> 2.0)
+  - MercuryCore (from `git@github.com:MercuryIntermedia/MercuryCoreLib-iOS.git`)
+
+EXTERNAL SOURCES:
+  MercuryCore:
+    :git: git@github.com:MercuryIntermedia/MercuryCoreLib-iOS.git
+
+CHECKOUT OPTIONS:
+  MercuryCore:
+    :commit: 277b67a52e20cfe8fc34298b5c20129a36a4b3c4
+    :git: git@github.com:MercuryIntermedia/MercuryCoreLib-iOS.git
+
+SPEC CHECKSUMS:
+  KIF: 28b15535a46fafddb318217fe97819d2755ed1ef
+  MercuryCore: 2c6a616bbfa3c521fa28df06418d65c6c84af302
+  SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
+  TouchXML: 37089088da5e46f0f4a8797d320fbcfed395ab46
+
+COCOAPODS: 0.38.2
