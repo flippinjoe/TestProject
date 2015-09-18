@@ -35,10 +35,6 @@
     
     [MFlowConfig dump];
     
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-//    self.window.rootViewController = [[NSClassFromString(@"HgViewController") alloc] init];
-//    [self.window makeKeyAndVisible];
-    
     if([MFlowConfig sharedInstance].usingStaging)
     {
         [[[UIAlertView alloc] initWithTitle:@"Staging Enabled" message:@"You have enabled staging" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
